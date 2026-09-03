@@ -1,0 +1,21 @@
+name: CI
+
+# Runs on every push/PR. Uses the same Docker-based build (see
+# ../../Dockerfile and ../../CLAUDE.md) as local dev builds, so this checks
+# exactly what a contributor's own `./dev.sh test` would check.
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build and run tests (Docker-only, per CLAUDE.md)
+        run: ./dev.sh test

@@ -1,0 +1,10 @@
+[Xfce Panel]
+Type=X-XFCE-PanelPlugin
+Encoding=UTF-8
+Name=Task Time
+Comment=Track time spent on tasks and log start/pause/resume/finish events to per-task files
+Icon=xfce4-task-time-plugin
+X-XFCE-Module=xfce4-task-time-plugin
+X-XFCE-Internal=FALSE
+X-XFCE-Unique=false
+X-XFCE-API=2.0
