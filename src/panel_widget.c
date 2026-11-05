@@ -247,7 +247,7 @@ panel_widget_new (XfcePanelPlugin *plugin)
 
   self->button = xfce_panel_create_button ();
   GtkWidget *box = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 4);
-  self->icon = gtk_image_new_from_icon_name ("xfce4-task-time-plugin", GTK_ICON_SIZE_MENU);
+  self->icon = gtk_image_new_from_icon_name ("xfce4-task-time-plugin-symbolic", GTK_ICON_SIZE_MENU);
   self->label = gtk_label_new ("No active task");
   self->cap_bar = gtk_drawing_area_new ();
   gtk_widget_set_size_request (self->cap_bar, 6, -1);

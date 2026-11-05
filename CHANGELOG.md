@@ -1,6 +1,11 @@
 # Changelog
 
-## [0.1.0] - Unreleased
+## [0.1.1] - Unreleased
+
+- The panel button icon is now a symbolic icon that adapts its color to the
+  active GTK theme (dark/light), instead of a fixed hardcoded color.
+
+## [0.1.0] - 2026-09-03
 
 - Initial release: define tasks with per-task output files, Start/Pause/
   Unpause/Finish from the panel, clocking and CSV output modes, optional

@@ -1,5 +1,5 @@
 project('xfce4-task-time-plugin', 'c',
-  version: '0.1.0',
+  version: '0.1.1',
   license: 'MIT',
   default_options: ['c_std=gnu11', 'warning_level=2'])
 
@@ -48,6 +48,7 @@ desktop_conf = configure_file(
 install_data(desktop_conf, install_dir: desktop_dir)
 
 install_data('data/icons/xfce4-task-time-plugin.svg', install_dir: icons_dir)
+install_data('data/icons/xfce4-task-time-plugin-symbolic.svg', install_dir: icons_dir)
 
 test_exe = executable('test_task_time',
   'tests/test_task_time.c',
