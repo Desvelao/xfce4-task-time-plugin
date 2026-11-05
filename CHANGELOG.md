@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.1.1] - Unreleased
+## [0.1.1] - 2026-11-05
 
 - The panel button icon is now a symbolic icon that adapts its color to the
   active GTK theme (dark/light), instead of a fixed hardcoded color.
